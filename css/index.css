@@ -51,3 +51,11 @@ figure {
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
 }
+.img-container{
+    width:690px;
+    margin: 0 auto;
+}
+.img-container img{
+    display: block;
+    width:100%;
+}
