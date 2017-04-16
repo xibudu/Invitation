@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1">
+    <meta content="target-densitydpi=device-dpi,width=750,user-scalable=no" name="viewport">
+    <meta content="telephone=no" name="format-detection"/>
+    <title>陶醉天下</title>
+    <link href="//weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/css/main.css" rel="stylesheet"/>
+    <!--<link href="css/main.css" rel="stylesheet"/>-->
+    <link href="//weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/css/swiper.min.css" rel="stylesheet"/>
+    <style>
+
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            -webkit-perspective: 800px;
+            -moz-perspective: 800px;
+            -o-perspective: 800px;
+            perspective: 800px;
+        }
+
+        #card,#card_1,#card_2,#card_3,#card_4,#card_5 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            -webkit-transition: -webkit-transform 1s ease .6s;
+            -moz-transition: -moz-transform 1s ease .6s;
+            -o-transition: -o-transform 1s ease .6s;
+            transition: transform 1s ease .6s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        #card.flipped,#card_1.flipped,#card_2.flipped,#card_3.flipped,#card_4.flipped,#card_5.flipped {
+            -webkit-transform: rotateY( 180deg );
+            -moz-transform: rotateY( 180deg );
+            -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+        }
+
+        figure {
+            display: block;
+            height: 100%;
+            width: 100%;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 140px;
+            position: absolute;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+
+        .back {
+            -webkit-transform: rotateY( 180deg );
+            -moz-transform: rotateY( 180deg );
+            -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+<div class="top"><img src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/tel.png"/></div>
+<div class="swiper-container swiper-container-vertical" id="wap">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide cover">
+            <img class="logo logo_1" src="//weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/logo.png"/>
+            <img class="logo_p logo_p_1 pr44" src="//weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/t_p.png"/>
+            <img class="cloud" src="//weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/cloud.png"/>
+        </div>
+
+        <div class="swiper-slide">
+            <img class="title mt148"src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/p_1_t.png">
+            <img class="server mt62" src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/p_1_server.png"/>
+        </div>
+        <div class="swiper-slide">
+            <img class="title mt148"src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/p_2_t.png">
+            <img class="server mt62" src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/p_2_s.png"/>
+        </div>
+        <div class="swiper-slide">
+            <img class="title mt148"src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/p_3_t.png">
+            <img class="server mt62" src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/p_3_s.png"/>
+        </div>
+        <div class="swiper-slide">
+            <img class="title mt148"src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/p_4_t.png">
+            <img class="server mt62" src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/p_4_s.png"/>
+        </div>
+
+        <div class="swiper-slide">
+            <img class="mt140 title" src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/case_t.png"/>
+            <img class="tree" src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/tree.png"/>
+            <div class="case_hn">
+                <section class="container">
+                    <div id="card">
+                        <figure class="front"><img src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/case_hn.png"/></figure>
+                        <figure class="back"><img src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/case_hn_back.png"/></figure>
+                    </div>
+                </section>
+            </div>
+
+            <div class="case_yn">
+                <section class="container">
+                    <div id="card_1">
+                        <figure class="front"><img src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/case_yn.png"/></figure>
+                        <figure class="back"><img src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/case_yn_back.png"/></figure>
+                    </div>
+                </section>
+            </div>
+
+            <div class="case_bl">
+                <section class="container">
+                    <div id="card_2">
+                        <figure class="front"><img src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/case_bl.png"/></figure>
+                        <figure class="back"><img src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/case_bl_back.png"/></figure>
+                    </div>
+                </section>
+            </div>
+
+            <div class="case_cq">
+                <section class="container">
+                    <div id="card_3">
+                        <figure class="front"><img src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/case_cq.png"/></figure>
+                        <figure class="back"><img src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/case_cq_back.png"/></figure>
+                    </div>
+                </section>
+            </div>
+
+            <div class="case_wlj">
+                <section class="container">
+                    <div id="card_4">
+                        <figure class="front"><img src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/case_wlj.png"/></figure>
+                        <figure class="back"><img src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/case_wlj_back.png"/></figure>
+                    </div>
+                </section>
+            </div>
+
+            <div class="case_xj">
+                <section class="container">
+                    <div id="card_5">
+                        <figure class="front"><img src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/case_xj.png"/></figure>
+                        <figure class="back"><img src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/case_xj_back.png"/></figure>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <img class="title mt148"src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/p_5_t.png">
+            <img class="p_5_user mt36" src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/p_5_p.png"/>
+            <img class="p_5_p mt114" src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/p_5_info.png"/>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="contact_box">
+                <div class="tel_icon">联系电话:010-59273550</div>
+                <div class="email_icon">联系邮箱:yuhailan@joymaker.cc</div>
+                <div class="user_icon">联系人:于海兰</div>
+                <div class="mobile_icon">联系手机:15811155731</div>
+            </div>
+            <div class="apply_info">
+                <p>合作意向</p>
+                <textarea placeholder="请简述您公司的产品和合作意向，20字以上。" id='info'></textarea>
+            </div>
+            <input class="tel_value" placeholder="手机号" id='phone'/>
+            <div class="btn">提交</div>
+        </div>
+
+        <div class="swiper-slide cover">
+            <img class="logo logo_1" src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/logo.png"/>
+            <img class="logo_p pr44 logo_p_2" style="margin-top:304px" src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/t_p_9.png"/>
+            <img class="last" src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/last.png"/>
+        </div>
+    </div>
+</div>
+<div class="up"><img src="http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/up.png"/></div>
+<script src="//pv.taozuike.cn/pv.js?sid=zxCVYueUF"></script>
+<script src="//weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/js/jquery-3.0.0.min.js"></script>
+<script src="//weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/js/swiper.min.js"></script>
+<script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!--<script>
+    var prevent = {};
+    prevent.please = '${token}', prevent.dnot = '${timestamp_token}', prevent.passit = '${page.pageId}';
+    var weixin_token  = {appId: '${appid}', timestamp: ${timestamp}, nonceStr: '${noncestr}', signature: '${jssdk_sign}'};
+</script>-->
+<script>
+    var shareDesc = "陶醉一体化二维码营销服务，两年潜伏，隆重发布";
+    var shareImg = "http://weiop.oss-cn-beijing.aliyuncs.com/tjh_h5/images/%E5%88%86%E4%BA%AB%E5%9B%BE%E6%A0%87.jpg";
+    var shareLink = location.href;
+    shareLink = _joyAnalytics.countLevel(shareLink);
+    var shareTitle = "陶醉天下，让好产品红爆朋友圈";
+
+    /*wx.config({
+        debug: false, //
+        appId: weixin_token.appId, // 必填，公众号的唯一标识
+        timestamp: weixin_token.timestamp, // 必填，生成签名的时间戳
+        nonceStr: weixin_token.nonceStr, // 必填，生成签名的随机串
+        signature: weixin_token.signature,// 必填，签名，见附录1
+        jsApiList: [
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'onMenuShareQQ',
+            'onMenuShareWeibo',
+            'onMenuShareQZone',
+            'showOptionMenu'
+        ] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+    });*/
+
+    wx.ready(function () {
+        share();
+    });
+
+    function share(){
+
+        wx.showOptionMenu();
+        wx.onMenuShareTimeline({
+            title: shareTitle, // 分享标题
+            link: shareLink, // 分享链接
+            imgUrl:shareImg,
+            success: function () {
+                _joyAnalytics.send("share", {
+                    aid: 'S000004' // 微信朋友圈
+                });
+            }
+        });
+
+        wx.onMenuShareAppMessage({
+            title: shareTitle, // 分享标题
+            link: shareLink, // 分享链接
+            imgUrl:shareImg,
+            desc: shareDesc, // 分享描述
+            trigger: function (res) {
+                //alert('用户点击发送给朋友');
+            },
+            success: function (res) {
+                _joyAnalytics.send("share", {
+                    aid: 'S000003' // 微信朋友
+                });
+            },
+            cancel: function (res) {
+                //alert('已取消');
+            },
+            fail: function (res) {
+                //alert(res);
+            }
+        });
+
+        wx.onMenuShareQQ({
+            title: shareTitle, // 分享标题
+            link: shareLink, // 分享链接
+            imgUrl:shareImg,
+            desc: shareDesc, // 分享描述
+            trigger: function (res) {
+                //alert('用户点击发送给朋友');
+            },
+            success: function (res) {
+                _joyAnalytics.send("share", {
+                    aid: 'S000002' // QQ空间
+                });
+            },
+            cancel: function (res) {
+                //alert('已取消');
+            },
+            fail: function (res) {
+                //alert(res);
+            }
+        });
+
+        wx.onMenuShareWeibo({
+            title: shareTitle, // 分享标题
+            link: shareLink, // 分享链接
+            imgUrl:shareImg,
+            desc: shareDesc, // 分享描述
+            trigger: function (res) {
+                //alert('用户点击发送给朋友');
+            },
+            success: function (res) {
+                _joyAnalytics.send("share", {
+                    aid: 'S000006' // QQ微博
+                });
+            },
+            cancel: function (res) {
+                //alert('已取消');
+            },
+            fail: function (res) {
+                //alert(res);
+            }
+        });
+
+        wx.onMenuShareQZone({
+            title: shareTitle, // 分享标题
+            desc: shareDesc, // 分享描述
+            link: shareLink, // 分享链接
+            imgUrl:shareImg, // 分享图标
+            success: function () {
+                _joyAnalytics.send("share", {
+                    aid: 'S000005' // QQ空间
+                });
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+    }
+
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        mousewheelControl: true,
+        onSlideChangeStart: function (swiper) {
+            if(swiper.activeIndex == 0 ||swiper.activeIndex == 7 ||swiper.activeIndex == 8){
+                $('.top').hide()
+            }else {
+                $('.top').show()
+            }
+
+            if(swiper.activeIndex == 5){
+                $('#card').addClass('flipped')
+                $('#card_1').addClass('flipped')
+                $('#card_2').addClass('flipped')
+                $('#card_3').addClass('flipped')
+                $('#card_4').addClass('flipped')
+                $('#card_5').addClass('flipped')
+            }else {
+                $('#card').removeClass('flipped')
+                $('#card_1').removeClass('flipped')
+                $('#card_2').removeClass('flipped')
+                $('#card_3').removeClass('flipped')
+                $('#card_4').removeClass('flipped')
+                $('#card_5').removeClass('flipped')
+            }
+
+            if(swiper.activeIndex == 7 || swiper.activeIndex == 8){
+                $('.up').hide()
+            }else{
+                $('.up').show()
+            }
+        }
+    });
+
+    $('.top').on('click',function () {
+        swiper.slideTo(7)
+    })
+
+    setTimeout(function () {
+        $('.logo_p').show();
+        $('.logo_1').show()
+    },200)
+
+    var mobileRegex = /^1[3|4|5|7|8][0-9]\d{8}$/;
+
+    $('.btn').on('click',function(){
+        if($('#info').val()==''){
+            alert('请输入合作意向')
+            return
+        }
+
+        if(!mobileRegex.test($('#phone').val())){
+            alert('请输入正确的手机号码')
+            return
+        }
+
+        $.ajax({
+            type:'POST',
+            url:'/act/feedback/add',
+            data:{
+                content:$('#info').val(),
+                mobile:$('#phone').val(),
+                activityId:'ORGSW00001'
+            },
+            success:function(res){
+                if(res.code == 1){
+                    alert('提交成功');
+                    $('#info').val('');
+                    $('#phone').val('');
+                    swiper.slideTo(8)
+                }else{
+                    alert(res.msg)
+                }
+            }
+        })
+    })
+</script>
+</body>
+</html>
